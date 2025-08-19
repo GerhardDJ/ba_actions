@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_style">
+    <sys_ui_style action="INSERT_OR_UPDATE">
+        <alt/>
+        <element>number</element>
+        <name>x_110236_action_0_actions</name>
+        <style>background-color:Tomato</style>
+        <sys_class_name>sys_ui_style</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-19 21:59:40</sys_created_on>
+        <sys_id>e49d19d0c367a298eecff73ed4013190</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>x_110236_action_0_actions</sys_name>
+        <sys_package display_value="Action Tracker" source="x_110236_action_0">8ec2d878c39b2214eecff73ed4013101</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Action Tracker">8ec2d878c39b2214eecff73ed4013101</sys_scope>
+        <sys_update_name>sys_ui_style_e49d19d0c367a298eecff73ed4013190</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-19 22:13:53</sys_updated_on>
+        <themed_style/>
+        <value>javascript:current.action_required == true;</value>
+    </sys_ui_style>
+    <sys_translated_text action="delete_multiple" query="documentkey=e49d19d0c367a298eecff73ed4013190"/>
+</record_update>

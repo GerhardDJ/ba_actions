@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_110236_action_0.ActionDateUtils</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description>For the scope application this script include will be used to do date and time calculations in client scripts</description>
+        <mobile_callable>false</mobile_callable>
+        <name>ActionDateUtils</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var ActionDateUtils = Class.create();
+ActionDateUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+    // ##################Begin###############################################
+    // Calculate if the date provided is before today date
+
+    isDueDateBeforeToday: function() {
+        // Get the current date and time
+        var gdtToday = new GlideDateTime();
+
+        // Convert the input due date string to a GlideDateTime object
+        var myParam = this.getParameter('sysparm_my_param'); // Retrieve parameter from client
+        var gdtDueDate = new GlideDateTime();
+        gdtDueDate.setDisplayValue(myParam); // Assumes dueDateString is in user's display format
+
+        // Compare the due date with today's date
+        if (gdtDueDate.before(gdtToday)) {
+            return true; // Due date is before today
+        } else {
+            return false; // Due date is today or in the future
+        }
+    },
+    // #################END###################################################
+
+    type: 'ActionDateUtils'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-18 20:31:54</sys_created_on>
+        <sys_id>742f7b3fc3976a58eecff73ed40131a8</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>ActionDateUtils</sys_name>
+        <sys_package display_value="Action Tracker" source="x_110236_action_0">8ec2d878c39b2214eecff73ed4013101</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Action Tracker">8ec2d878c39b2214eecff73ed4013101</sys_scope>
+        <sys_update_name>sys_script_include_742f7b3fc3976a58eecff73ed40131a8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-18 21:45:32</sys_updated_on>
+    </sys_script_include>
+</record_update>

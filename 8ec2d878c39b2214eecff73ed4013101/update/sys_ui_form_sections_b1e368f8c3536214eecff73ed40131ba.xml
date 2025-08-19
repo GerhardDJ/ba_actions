@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="b1e368f8c3536214eecff73ed40131ba" sys_domain="global" table="x_110236_action_0_actions" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-08-08 20:46:22</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>42e368f8c3536214eecff73ed40131be</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_110236_action_0_actions" name="x_110236_action_0_actions" sys_domain="global" view="Default view">b1e368f8c3536214eecff73ed40131ba</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_110236_action_0_actions" sys_domain="global" view="Default view">365394b8c39b2214eecff73ed40131c5</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-08-08 20:46:22</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-08-13 21:45:58</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7f716e92c39b6e94eecff73ed4013112</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_110236_action_0_actions" name="x_110236_action_0_actions" sys_domain="global" view="Default view">b1e368f8c3536214eecff73ed40131ba</sys_ui_form>
+            <sys_ui_section caption="Contacts" display_value="Contacts" name="x_110236_action_0_actions" sys_domain="global" view="Default view">b3716e92c39b6e94eecff73ed401310e</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-08-19 21:49:24</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-08-08 20:46:22</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c2e368f8c3536214eecff73ed40131c3</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_110236_action_0_actions" name="x_110236_action_0_actions" sys_domain="global" view="Default view">b1e368f8c3536214eecff73ed40131ba</sys_ui_form>
+            <sys_ui_section caption="Notes" display_value="Notes" name="x_110236_action_0_actions" sys_domain="global" view="Default view">71e368f8c3536214eecff73ed40131b8</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-08-19 21:49:24</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_110236_action_0_actions</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-08-08 20:46:21</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b1e368f8c3536214eecff73ed40131ba</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_110236_action_0_actions</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Action Tracker" source="x_110236_action_0">8ec2d878c39b2214eecff73ed4013101</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Action Tracker">8ec2d878c39b2214eecff73ed4013101</sys_scope>
+            <sys_update_name>sys_ui_form_sections_b1e368f8c3536214eecff73ed40131ba</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-08-08 20:46:21</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

@@ -1,0 +1,949 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=1343000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>28000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>When there are any updates done in Actions linked to a Project the Project work notes gets updated</description>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>ba_update_project_when_work_notes_is_updated_in_action</internal_name>
+        <label_cache>[{"name":"Updated_1.current.project","label":"Trigger - Record Updated➛Actions Record➛Project","reference":"x_110236_action_0_project","reference_display":"Project","type":"reference","base_type":"reference","parent_table_name":"x_110236_action_0_actions","column_name":"project","usedInstances":{"20b1d599-2c64-4268-9ada-bc036b3a1a64":["record"]}},{"name":"Updated_1.current.work_notes","label":"Trigger - Record Updated➛Actions Record➛Work notes","reference":"","reference_display":"Work notes","type":"journal_input","base_type":"journal_input","parent_table_name":"x_110236_action_0_actions","column_name":"work_notes","usedInstances":{"20b1d599-2c64-4268-9ada-bc036b3a1a64":["work_notes"]}},{"name":"Updated_1.current.number","label":"Trigger - Record Updated➛Actions Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"x_110236_action_0_actions","column_name":"number","usedInstances":{"20b1d599-2c64-4268-9ada-bc036b3a1a64":["work_notes"]}},{"name":"Updated_1.current.short_description","label":"Trigger - Record Updated➛Actions Record➛Short description","reference":"","reference_display":"Short description","type":"string","base_type":"string","parent_table_name":"x_110236_action_0_actions","column_name":"short_description","usedInstances":{"20b1d599-2c64-4268-9ada-bc036b3a1a64":["work_notes"]}}]</label_cache>
+        <master_snapshot>3db991d0c3e3a298eecff73ed4013100</master_snapshot>
+        <master_snapshot_digest/>
+        <name>BA Update Project when work notes is updated in Action</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>0eb991d0c3e3a298eecff73ed4013190</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-19 21:17:49</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c294d914c323a298eecff73ed401319e</sys_id>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_name>BA Update Project when work notes is updated in Action</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Action Tracker" source="x_110236_action_0">8ec2d878c39b2214eecff73ed4013101</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Action Tracker">8ec2d878c39b2214eecff73ed4013101</sys_scope>
+        <sys_update_name>sys_hub_flow_c294d914c323a298eecff73ed401319e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-19 21:40:14</sys_updated_on>
+        <type>flow</type>
+        <updation_source/>
+        <version>2</version>
+        <version_record display_value="Created 2025-08-19 15:40:14">dab9d1d0c3e3a298eecff73ed401311f</version_record>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=c294d914c323a298eecff73ed401319e"/>
+    <sys_variable_value action="delete_multiple" query="document_key=c294d914c323a298eecff73ed401319e"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_110236_action_0_actions">^EQ<item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>false</on_insert>
+        <on_update>true</on_update>
+        <published_version/>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-19 21:40:13</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>0eb991d0c3e3a298eecff73ed4013190</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Action Tracker">8ec2d878c39b2214eecff73ed4013101</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-19 21:40:13</sys_updated_on>
+        <table>x_110236_action_0_actions</table>
+        <trigger_definition/>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>c294d914c323a298eecff73ed401319e</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-19 21:40:13</sys_created_on>
+        <sys_id>cab991d0c3e3a298eecff73ed4013191</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-19 21:40:13</sys_updated_on>
+        <trigger display_value="">0eb991d0c3e3a298eecff73ed4013190</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=c294d914c323a298eecff73ed401319e^sys_idNOT INcab991d0c3e3a298eecff73ed4013191"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=c294d914c323a298eecff73ed401319e"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=c294d914c323a298eecff73ed401319e^sys_idNOT IN4e94d914c323a298eecff73ed40131a0"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>c294d914c323a298eecff73ed401319e</id>
+        <name>BA Update Project when work notes is updated in Action</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-19 21:17:50</sys_created_on>
+        <sys_id>4e94d914c323a298eecff73ed40131a0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-19 21:17:50</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=4e94d914c323a298eecff73ed40131a0"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=c294d914c323a298eecff73ed401319e^sys_idNOT IN79a4d118c323a298eecff73ed401319f,cea4d118c323a298eecff73ed40131a6,f5a4d118c323a298eecff73ed4013122"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="BA Update Project when work notes is updated in Action">c294d914c323a298eecff73ed401319e</model>
+        <model_id>c294d914c323a298eecff73ed401319e</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_c294d914c323a298eecff73ed401319e</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-19 21:18:05</sys_created_on>
+        <sys_id>79a4d118c323a298eecff73ed401319f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Action Tracker">8ec2d878c39b2214eecff73ed4013101</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-19 21:40:11</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=79a4d118c323a298eecff73ed401319f"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="BA Update Project when work notes is updated in Action">c294d914c323a298eecff73ed401319e</model>
+        <model_id>c294d914c323a298eecff73ed401319e</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_c294d914c323a298eecff73ed401319e</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-19 21:18:06</sys_created_on>
+        <sys_id>cea4d118c323a298eecff73ed40131a6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Action Tracker">8ec2d878c39b2214eecff73ed4013101</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-19 21:18:06</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=cea4d118c323a298eecff73ed40131a6"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="BA Update Project when work notes is updated in Action">c294d914c323a298eecff73ed401319e</model>
+        <model_id>c294d914c323a298eecff73ed401319e</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_c294d914c323a298eecff73ed401319e</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-19 21:18:05</sys_created_on>
+        <sys_id>f5a4d118c323a298eecff73ed4013122</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Action Tracker">8ec2d878c39b2214eecff73ed4013101</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-19 21:40:11</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=f5a4d118c323a298eecff73ed4013122"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=c294d914c323a298eecff73ed401319e"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=c294d914c323a298eecff73ed401319e"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=c294d914c323a298eecff73ed401319e^sys_idNOT IN29a41dd4c323a298eecff73ed4013140"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="BA Update Project when work notes is updated in Action">c294d914c323a298eecff73ed401319e</flow>
+        <generation_source/>
+        <name>Updated</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-19 21:18:04</sys_created_on>
+        <sys_id>29a41dd4c323a298eecff73ed4013140</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-19 21:40:12</sys_updated_on>
+        <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
+        <trigger_inputs>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</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_update</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=c294d914c323a298eecff73ed401319e^sys_idNOT INd7f451d8c323a298eecff73ed401310a"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="BA Update Project when work notes is updated in Action">c294d914c323a298eecff73ed401319e</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-19 21:19:33</sys_created_on>
+        <sys_id>d7f451d8c323a298eecff73ed401310a</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="Action Tracker">8ec2d878c39b2214eecff73ed4013101</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-19 21:41:10</sys_updated_on>
+        <ui_id>20b1d599-2c64-4268-9ada-bc036b3a1a64</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVTU/jMBD9K5HPVZQ0UEFvKyqklVhYAdsLRZZjT8GL42Rtp9Ct+t93nDhpVSo+JC7V5hTPh/3e88z4bkWkIGNyBCJJT9MRz9IsGybJ8OQozUdZng5FxgBSMiCaFYCRBnhpBK4XTNXesFr9qgRzIGga89oY0C6uTPkbuFuvMU5IWym2nIZwtPBHqQTGkfHd/YBUzODODgwZr3ZcH4WmWA4KQ687bLtY3bLya1HyukB8VHbGi5A5CZ7o+wQ9mOThpMmAwIsDLQCBzJmyMCAF08i2NEsydqZGgwEmrrRa9hGPUruWaMFerPyLJx8lPm4OyIwHEfolDQK15vmEOXaDO3NXm16vUnKwrSYC5qxW7mzb1gZcVU6Wuk1xLFdddqnqQl+2ipB+g637qC2CgMrz9MhbWvObx/L5ugN5LnUjSaCoSs5Uv2LOGZnXzsNZEVDQaFywqpL6gWItLGSTjFCK+EHhIp6r8hnPtPJBx4x73DGqyuJztE8a85QZ6Un8wG0weT0gdmnPFLN2QwU1pH9qj6QlFijQRoVGAtpUgk/mRlbuGx61gAB8PQjFnx+/VWH8dFNQW3tuGuCFpmkyzEa0JUITGsr/dfH/7B2f64EPIOx64La5+f2IQxu8sl1s50aXrSM0wfGXNcHJITVBoHHwXfBe7SfDN6frViU15W636v65NE9Ul0h4VidJJm6ZfYou6yIHM472vQq68a3XM42qGhchxQYZ8t6fYH2YF6gL87kz3QaOI/+/L20DbN8DdCiwPzchPnCP3YQ4l6CE3XOx3XiAAvVyQNuL3hkRwRlNg7N/K79sTqSjpPkOaFr8N0/m/T/tRG3kMQoAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=d7f451d8c323a298eecff73ed401310a"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=c294d914c323a298eecff73ed401319e"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=c294d914c323a298eecff73ed401319e"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=c294d914c323a298eecff73ed401319e"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=c294d914c323a298eecff73ed401319e"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_c294d914c323a298eecff73ed401319e</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-19 21:18:06</sys_created_on>
+        <sys_id>0aa4d118c323a298eecff73ed40131a4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Action Tracker" source="x_110236_action_0">8ec2d878c39b2214eecff73ed4013101</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Action Tracker">8ec2d878c39b2214eecff73ed4013101</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-19 21:18:06</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_c294d914c323a298eecff73ed401319e</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-19 21:18:06</sys_created_on>
+        <sys_id>4ea4d118c323a298eecff73ed40131f6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Action Tracker" source="x_110236_action_0">8ec2d878c39b2214eecff73ed4013101</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Action Tracker">8ec2d878c39b2214eecff73ed4013101</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-19 21:18:06</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_c294d914c323a298eecff73ed401319e</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-19 21:18:05</sys_created_on>
+        <sys_id>fda4d118c323a298eecff73ed401319b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Action Tracker" source="x_110236_action_0">8ec2d878c39b2214eecff73ed4013101</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Action Tracker">8ec2d878c39b2214eecff73ed4013101</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-19 21:18:05</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_c294d914c323a298eecff73ed401319e"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_c294d914c323a298eecff73ed401319e"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>28000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>When there are any updates done in Actions linked to a Project the Project work notes gets updated</description>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>ba_update_project_when_work_notes_is_updated_in_action</internal_name>
+        <label_cache>[{"name":"Updated_1.current.project","label":"Trigger - Record Updated➛Actions Record➛Project","reference":"x_110236_action_0_project","reference_display":"Project","type":"reference","base_type":"reference","parent_table_name":"x_110236_action_0_actions","column_name":"project","usedInstances":{"20b1d599-2c64-4268-9ada-bc036b3a1a64":["record"]}},{"name":"Updated_1.current.work_notes","label":"Trigger - Record Updated➛Actions Record➛Work notes","reference":"","reference_display":"Work notes","type":"journal_input","base_type":"journal_input","parent_table_name":"x_110236_action_0_actions","column_name":"work_notes","usedInstances":{"20b1d599-2c64-4268-9ada-bc036b3a1a64":["work_notes"]}},{"name":"Updated_1.current.number","label":"Trigger - Record Updated➛Actions Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"x_110236_action_0_actions","column_name":"number","usedInstances":{"20b1d599-2c64-4268-9ada-bc036b3a1a64":["work_notes"]}},{"name":"Updated_1.current.short_description","label":"Trigger - Record Updated➛Actions Record➛Short description","reference":"","reference_display":"Short description","type":"string","base_type":"string","parent_table_name":"x_110236_action_0_actions","column_name":"short_description","usedInstances":{"20b1d599-2c64-4268-9ada-bc036b3a1a64":["work_notes"]}}]</label_cache>
+        <master>true</master>
+        <name>BA Update Project when work notes is updated in Action</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="BA Update Project when work notes is updated in Action">c294d914c323a298eecff73ed401319e</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-19 21:40:12</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>3db991d0c3e3a298eecff73ed4013100</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Action Tracker">8ec2d878c39b2214eecff73ed4013101</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-19 21:40:12</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=3db991d0c3e3a298eecff73ed4013100"/>
+    <sys_variable_value action="delete_multiple" query="document_key=3db991d0c3e3a298eecff73ed4013100"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=3db991d0c3e3a298eecff73ed4013100"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=3db991d0c3e3a298eecff73ed4013100^sys_idNOT IN79b991d0c3e3a298eecff73ed4013101"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>3db991d0c3e3a298eecff73ed4013100</id>
+        <name>BA Update Project when work notes is updated in Action</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-19 21:40:12</sys_created_on>
+        <sys_id>79b991d0c3e3a298eecff73ed4013101</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-19 21:40:12</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=79b991d0c3e3a298eecff73ed4013101"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=3db991d0c3e3a298eecff73ed4013100^sys_idNOT IN71b991d0c3e3a298eecff73ed4013134,8ab991d0c3e3a298eecff73ed401313c,b5b991d0c3e3a298eecff73ed4013102"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="BA Update Project when work notes is updated in Action">3db991d0c3e3a298eecff73ed4013100</model>
+        <model_id>3db991d0c3e3a298eecff73ed4013100</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_3db991d0c3e3a298eecff73ed4013100</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-19 21:40:12</sys_created_on>
+        <sys_id>71b991d0c3e3a298eecff73ed4013134</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Action Tracker">8ec2d878c39b2214eecff73ed4013101</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-19 21:40:12</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=71b991d0c3e3a298eecff73ed4013134"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="BA Update Project when work notes is updated in Action">3db991d0c3e3a298eecff73ed4013100</model>
+        <model_id>3db991d0c3e3a298eecff73ed4013100</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_3db991d0c3e3a298eecff73ed4013100</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-19 21:40:13</sys_created_on>
+        <sys_id>8ab991d0c3e3a298eecff73ed401313c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Action Tracker">8ec2d878c39b2214eecff73ed4013101</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-19 21:40:13</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=8ab991d0c3e3a298eecff73ed401313c"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="BA Update Project when work notes is updated in Action">3db991d0c3e3a298eecff73ed4013100</model>
+        <model_id>3db991d0c3e3a298eecff73ed4013100</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_3db991d0c3e3a298eecff73ed4013100</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-19 21:40:12</sys_created_on>
+        <sys_id>b5b991d0c3e3a298eecff73ed4013102</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Action Tracker">8ec2d878c39b2214eecff73ed4013101</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-19 21:40:12</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=b5b991d0c3e3a298eecff73ed4013102"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=3db991d0c3e3a298eecff73ed4013100"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=3db991d0c3e3a298eecff73ed4013100"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=3db991d0c3e3a298eecff73ed4013100^sys_idNOT IN4eb991d0c3e3a298eecff73ed4013189"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="BA Update Project when work notes is updated in Action">3db991d0c3e3a298eecff73ed4013100</flow>
+        <generation_source/>
+        <name>Updated</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-19 21:40:13</sys_created_on>
+        <sys_id>4eb991d0c3e3a298eecff73ed4013189</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-19 21:40:13</sys_updated_on>
+        <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
+        <trigger_inputs>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</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_update</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=3db991d0c3e3a298eecff73ed4013100^sys_idNOT IN0eb991d0c3e3a298eecff73ed4013162"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="BA Update Project when work notes is updated in Action">3db991d0c3e3a298eecff73ed4013100</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-19 21:40:13</sys_created_on>
+        <sys_id>0eb991d0c3e3a298eecff73ed4013162</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Action Tracker">8ec2d878c39b2214eecff73ed4013101</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-19 21:40:13</sys_updated_on>
+        <ui_id>20b1d599-2c64-4268-9ada-bc036b3a1a64</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVTU/jMBD9K5HPVZQ0UEFvKyqklVhYAdsLRZZjT8GL42Rtp9Ct+t93nDhpVSo+JC7V5hTPh/3e88z4bkWkIGNyBCJJT9MRz9IsGybJ8OQozUdZng5FxgBSMiCaFYCRBnhpBK4XTNXesFr9qgRzIGga89oY0C6uTPkbuFuvMU5IWym2nIZwtPBHqQTGkfHd/YBUzODODgwZr3ZcH4WmWA4KQ687bLtY3bLya1HyukB8VHbGi5A5CZ7o+wQ9mOThpMmAwIsDLQCBzJmyMCAF08i2NEsydqZGgwEmrrRa9hGPUruWaMFerPyLJx8lPm4OyIwHEfolDQK15vmEOXaDO3NXm16vUnKwrSYC5qxW7mzb1gZcVU6Wuk1xLFdddqnqQl+2ipB+g637qC2CgMrz9MhbWvObx/L5ugN5LnUjSaCoSs5Uv2LOGZnXzsNZEVDQaFywqpL6gWItLGSTjFCK+EHhIp6r8hnPtPJBx4x73DGqyuJztE8a85QZ6Un8wG0weT0gdmnPFLN2QwU1pH9qj6QlFijQRoVGAtpUgk/mRlbuGx61gAB8PQjFnx+/VWH8dFNQW3tuGuCFpmkyzEa0JUITGsr/dfH/7B2f64EPIOx64La5+f2IQxu8sl1s50aXrSM0wfGXNcHJITVBoHHwXfBe7SfDN6frViU15W636v65NE9Ul0h4VidJJm6ZfYou6yIHM472vQq68a3XM42qGhchxQYZ8t6fYH2YF6gL87kz3QaOI/+/L20DbN8DdCiwPzchPnCP3YQ4l6CE3XOx3XiAAvVyQNuL3hkRwRlNg7N/K79sTqSjpPkOaFr8N0/m/T/tRG3kMQoAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=0eb991d0c3e3a298eecff73ed4013162"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=3db991d0c3e3a298eecff73ed4013100"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=3db991d0c3e3a298eecff73ed4013100"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=3db991d0c3e3a298eecff73ed4013100"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=3db991d0c3e3a298eecff73ed4013100"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_3db991d0c3e3a298eecff73ed4013100</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-19 21:40:13</sys_created_on>
+        <sys_id>75b991d0c3e3a298eecff73ed4013139</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Action Tracker" source="x_110236_action_0">8ec2d878c39b2214eecff73ed4013101</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Action Tracker">8ec2d878c39b2214eecff73ed4013101</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-19 21:40:13</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_3db991d0c3e3a298eecff73ed4013100</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-19 21:40:13</sys_created_on>
+        <sys_id>8ab991d0c3e3a298eecff73ed401315a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Action Tracker" source="x_110236_action_0">8ec2d878c39b2214eecff73ed4013101</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Action Tracker">8ec2d878c39b2214eecff73ed4013101</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-19 21:40:13</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_3db991d0c3e3a298eecff73ed4013100</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-19 21:40:12</sys_created_on>
+        <sys_id>b5b991d0c3e3a298eecff73ed401310b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Action Tracker" source="x_110236_action_0">8ec2d878c39b2214eecff73ed4013101</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Action Tracker">8ec2d878c39b2214eecff73ed4013101</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-19 21:40:12</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_3db991d0c3e3a298eecff73ed4013100"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_3db991d0c3e3a298eecff73ed4013100"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>c294d914c323a298eecff73ed401319e</sys_id>
+        <latest_snapshot>3db991d0c3e3a298eecff73ed4013100</latest_snapshot>
+        <compiler_build>glide-zurich-07-01-2025__patch0-07-15-2025_07-23-2025_1759.zip</compiler_build>
+        <version_record/>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=c294d914c323a298eecff73ed401319e^sys_idNOT IN82b991d0c3e3a298eecff73ed4013193"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerUniqueChange</binding_strategy>
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"82b991d0c3e3a298eecff73ed4013193","name":"plan","plan_signature":null}}</plan>
+        <plan_id>c294d914c323a298eecff73ed401319e</plan_id>
+        <snapshot>bfe91154c3e3a298eecff73ed4013126</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-19 21:40:13</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>82b991d0c3e3a298eecff73ed4013193</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-19 21:40:13</sys_updated_on>
+        <trigger display_value="">0eb991d0c3e3a298eecff73ed4013190</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=c294d914c323a298eecff73ed401319e"/>
+</record_update>

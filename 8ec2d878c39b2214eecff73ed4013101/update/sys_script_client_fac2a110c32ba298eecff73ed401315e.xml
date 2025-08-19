@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>Change the number and dates to red when the dates are in the past</description>
+        <field>follow_up</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Change Number and dates to red when in p</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+    if (isLoading || newValue === '') {
+        return;
+    }
+
+    var dateToCheck = g_form.getValue('follow_up'); // Get the follow up date
+
+    var ga = new GlideAjax('ActionDateUtils'); // Script Include name
+    ga.addParam('sysparm_name', 'isDueDateBeforeToday'); // Function name in Script Include
+    ga.addParam('sysparm_my_param', dateToCheck); // Custom parameter
+    ga.getXML(myFunctionCallback); // Call Script Include and specify callback
+
+    function myFunctionCallback(response) {
+        var answer = response.responseXML.documentElement.getAttribute('answer'); // For getXML
+
+        if (answer == "true") {
+            g_form.getControl('follow_up').style.backgroundColor = 'Red'; //Using getControl to set background
+            g_form.setValue('action_required', true);
+        } else {
+            g_form.getControl('follow_up').style.backgroundColor = ''; // Reset to default
+            g_form.setValue('action_required', false);
+        }
+    }
+
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-19 22:22:32</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>fac2a110c32ba298eecff73ed401315e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Change Number and dates to red when in p</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Action Tracker" source="x_110236_action_0">8ec2d878c39b2214eecff73ed4013101</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Action Tracker">8ec2d878c39b2214eecff73ed4013101</sys_scope>
+        <sys_update_name>sys_script_client_fac2a110c32ba298eecff73ed401315e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-19 22:22:32</sys_updated_on>
+        <table>x_110236_action_0_actions</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>
